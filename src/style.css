@@ -1,0 +1,29 @@
+section {
+    max-width: 80vw;
+    margin: 80px auto;
+}
+
+.glide {
+    margin-top: 32px;
+}
+
+.glide__slide {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #fff;
+}
+
+.glide-1 .glide__slide {
+    background-color: aquamarine;
+}
+
+.glide-2 .glide__slide {
+    background-color: blue;
+}
+
+.glide-3 .glide__slide {
+    background-color: brown;
+}
