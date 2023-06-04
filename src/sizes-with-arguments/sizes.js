@@ -2,7 +2,7 @@ function define(obj, prop, definition) {
   Object.defineProperty(obj, prop, definition)
 }
 
-export default function (_slideWidth) {
+export default function (slideWidth) {
   return function (Glide, Components, Events) {
     const Sizes = {
       /**
@@ -88,7 +88,7 @@ export default function (_slideWidth) {
        * @return {Number}
        */
       get() {
-        return _slideWidth
+        return slideWidth
       }
     })
 
