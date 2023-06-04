@@ -2,7 +2,7 @@ function define(obj, prop, definition) {
   Object.defineProperty(obj, prop, definition)
 }
 
-export default function (_slideWidth) {
+export default function (slideWidth) {
   return function (Glide, Components, Events) {
     const Sizes = {
       /**
@@ -90,8 +90,8 @@ export default function (_slideWidth) {
       get() {
         if (typeof window.matchMedia !== 'undefined') {
           return window.matchMedia(`(min-width: 1024px)`).matches
-            ? _slideWidth.desktop
-            : _slideWidth.mobile || _slideWidth.desktop
+            ? slideWidth.desktop
+            : slideWidth.mobile || slideWidth.desktop
         }
       }
     })
